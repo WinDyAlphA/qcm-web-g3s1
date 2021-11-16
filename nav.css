@@ -1,0 +1,61 @@
+.menu a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: #8F2D56;
+    padding: 20px;
+    font-weight: 700;
+    border: 2px solid transparent;
+}
+
+.menu a:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.flex-nav {
+    display : flex;
+    background: #8F2D56;
+    position: sticky;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.flex-nav > div {
+    width : 20%;
+    height: 100%;
+    margin-left: 5%;
+} 
+
+main ul li{
+    align-items: flex-start;
+}
+
+.menuphoto {
+    width: 108%;
+    height: 100%;
+    justify-content: right;
+}
+
+
+.horizontalmenu {
+    margin-right: 15%;
+}
+
+header ul {
+    padding-top: 1%;
+    margin-top: 0%;
+}
+
+header {
+    position: sticky;
+    top : 0;
+}
+
+.menu {
+    display: inline-block;
+    padding-inline: 20px;
+    align-items: center;
+}

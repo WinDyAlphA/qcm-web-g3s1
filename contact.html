@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="autres.css" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <link rel="stylesheet" href="template.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="questions.css" />
+    <link rel="stylesheet" href="formulaire.css" />
+    <title>Contactez-nous</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="formulaire.js"></script>
+</head>
+<body>
+    <header>
+        <div class="flex-nav">
+            <div>
+              <img class="menuphoto" src="images/photo_menu.png" />
+            </div>
+            <ul class="horizontalmenu">
+                <li class="menu">
+                  <a href="other.html">Complémentaires</a>
+                </li>
+                <li class="menu">
+                  <a href="pres.html">Présentation</a>
+                </li>
+                <li class="menu">
+                  <a href="qcm.html">QCM</a>
+                </li>
+              </ul>
+          </div>
+    </header>
+    <main>
+        <div class="formulaire">
+            <h1>Formulaire de contact</h1>
+            <form name="myForm" action="file.php" onsubmit="return validateForm()" method="post">
+               <table class="form-style">
+                  <tr>
+                     <td>
+                        <label>
+                           Votre nom <span class="required">*</span>
+                        </label>
+                     </td>
+                     <td>
+                        <input type="text" name="name" class="long"/>
+                        <span class="error" id="errorname"></span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label>
+                           Votre adresse e-mail <span class="required">*</span>
+                        </label>
+                     </td>
+                     <td>
+                        <input type="email" name="email" class="long"/>
+                        <span class="error" id="erroremail"></span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label>
+                           Message <span class="required">*</span>
+                        </label>
+                     </td>
+                     <td>
+                        <textarea name="message" class="long field-textarea"></textarea>
+                        <span class="error" id="errormsg"></span>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td></td>
+                     <td>
+                        <input type="submit" value="Envoyer">      
+                        <input type="reset" value="Réinitialiser"> 
+                     </td>
+                  </tr>
+               </table>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <h3>© Tous droits réservés, le-but.fr</h3>
+    </footer>
+</body>
+</html>
